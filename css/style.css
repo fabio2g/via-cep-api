@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+form {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 8px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    margin-left: 15px;
+}
