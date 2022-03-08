@@ -1,27 +1,75 @@
-body {
-    text-align: center;
+:root {
+    --bg-dark: #111b21;
+    --bg-light: #45bdb9;
+    --bg-button: #f56606;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
+body {
+    background: var(--bg-dark);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 form {
-    border: 1px solid black;
-    border-radius: 8px;
-    width: 400px;
-    margin: auto;
-    padding: 20px;
+    width: 85%;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: var(--bg-light);
+    font-weight: bold;
+    padding: 6px 0;
 }
 
 input {
-    display: block;
-    width: 90%;
-    margin: 15px auto;
-    padding: 8px;
-    font-size: 14px;
+    width: 100%;
+    color: #eeee;
+    font-size: 15px;
+    padding: 12px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #eeee;
+    border-radius: 6px;
 }
 
-p {
-    font-size: 12px;
-    color: red;
-    text-align: left;
-    margin-left: 15px;
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.row div {
+    width: 100%;
+}
+
+.submit {
+    cursor: pointer;
+    background: var(--bg-button);
+    color: #eeee;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 250px;
+    margin-left: calc(100% - 250px);
+    border-radius: 25px;
+    padding: 11px;
+    border: none;
+    transition: background 300ms ease-in-out;
+}
+
+.submit:hover {
+    background: #ff8c2d;
 }
